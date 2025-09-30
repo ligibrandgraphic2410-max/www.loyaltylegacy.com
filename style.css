@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-size: contain;
+    line-height: 1.6;
+  }
+
+  .background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1700px;
+    line-height: 4.6;
+    z-index: -1;
+  }
+  header {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  .container {
+    text-align: center;
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+  .container button {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid blueviolet;
+    border-radius: 0 30px 0 30px;
+  }
+  .container button:hover {
+    color: white;
+    background-color: #7c3aed;
+    transform: scale(01.05);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.123);
+    line-height: 1.6;
+    z-index: 0;
+  }
+
+  header h1, header p {
+    position: relative;
+    z-index: 1;
+  }
+
+  header h1 {
+    font-size: 10rem;
+    font-family: 'Franklin Gothic Medium';
+    color: rgb(255, 255, 255);
+  }
+
+  header p {
+    font-size: 2.2rem;
+  }
+
+  section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .services, .portfolio, .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .card em {
+    background-color: rgb(238, 255, 0);
+  }
+  .card em:hover {
+    transform: scale(01.05);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  }
+  .card em:hover {
+    transform: scale(20.05);
+    background-color: #ffffff;
+  }
+
+  .card {
+    background: #f3f4f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 0 40px 0 40PX;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+
+  .card img:hover {
+    transform: scale(02.05);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  input, textarea, button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  button {
+    background-color: #8b5cf6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #7c3aed;
+  }
+
+  footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .login-section {
+    background-color: #f9fafb;
+    padding: 40px 20px;
+  }
+
+  .login-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  h5 {
+    font-size: 30px;
+  }
+  .wrape img{
+    width: 150px;
+    height: 150px;
+    border-radius: 0 60px 0 60px;
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.wrape p{
+  font-size: 11px;
+}
+.wrape{
+  width: 300px;
+  height: 400px;
+  background-color: rgba(46, 43, 43, 0.137);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 0 60px 0 60px;
+  display: inline-block;
+  cursor: pointer;
+}
+.wrape img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+nav img {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  cursor: pointer;
+}
+nav img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+nav {
+  background-color: lch(43.4% 102.26 309.33 / 0);
+}
+nav p {
+  margin: 0 3px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    font-size: 14px;
+  }
+}
+
+
